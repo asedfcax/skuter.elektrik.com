@@ -1,0 +1,72 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Button Styling */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeIn 2s ease forwards;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+/* Button Click */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
